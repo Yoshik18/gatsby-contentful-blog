@@ -1,21 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
+import PrimaryLayout from "../layouts/PrimaryLayout"
+import { graphql } from "gatsby"
+import Post from "../components/Post"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const index = ({ data }) => {
+  return (
+    <PrimaryLayout>
+      {data.allContentfulBlog.nodes.map(node => (
+        <div className="col-md-4">
+          <Post
+            date={node.datePublished}
+            slug={node.slug}
+            title={node.title}
+            excerpt="New excerpt"
+            image={node.thumbnail.resize.src}
+          />
+        </div>
+      ))}
+    </PrimaryLayout>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+export const query = graphql`
+  {
+    allContentfulBlog(sort: { fields: datePublished, order: DESC }) {
+      nodes {
+        thumbnail {
+          resize(width: 800, height: 500) {
+            src
+          }
+        }
+        title
+        datePublished(formatString: "MMMM DD, YYYY")
+        slug
+      }
+    }
+  }
+`
 
-export default IndexPage
+export default index
