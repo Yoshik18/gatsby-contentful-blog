@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/SEO"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import { graphql } from "gatsby"
 import Post from "../components/Post"
@@ -6,6 +7,7 @@ import Post from "../components/Post"
 const index = ({ data }) => {
   return (
     <PrimaryLayout>
+      <SEO title="Home" />
       {data.allContentfulBlog.nodes.map(node => (
         <div className="col-md-4">
           <Post

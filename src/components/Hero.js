@@ -7,7 +7,7 @@ const Hero = () => {
         <h1 className=" display-4 font-weight-bold underline">
           DigBizCards Blog
         </h1>
-        <h4 className="underline">Thoughts, stories and ideas.</h4>
+        <h4 className="underline">Learn. Rank. Dominate.</h4>
       </div>
     </div>
   )

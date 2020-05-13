@@ -1,17 +1,25 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
-import { Link } from "gatsby"
+import logo from "../images/logo2.png"
 
 const header = () => {
   return (
     <div>
       <Navbar className="myNav p-4" bg="light" expand="lg">
-        <Navbar.Brand href="/">Blog</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            className="img-fluid"
+            style={{ width: 250 }}
+            alt="DigBizCards.in"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link>
               <a
+                rel="noopener noreferrer"
                 className="no-decor"
                 href="https://digbizcards.in/login/"
                 target="_blank"
@@ -21,6 +29,7 @@ const header = () => {
             </Nav.Link>
             <Nav.Link>
               <a
+                rel="noopener noreferrer"
                 className="no-decor"
                 href="https://digbizcards.in/register/"
                 target="_blank"
