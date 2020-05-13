@@ -1,6 +1,5 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
-import logo from "../images/logo2.png"
 
 const header = () => {
   return (
@@ -8,7 +7,7 @@ const header = () => {
       <Navbar className="myNav p-4" bg="light" expand="lg">
         <Navbar.Brand href="/">
           <img
-            src={logo}
+            src=""
             className="img-fluid"
             style={{ width: 250 }}
             alt="DigBizCards.in"
