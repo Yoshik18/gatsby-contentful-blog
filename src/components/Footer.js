@@ -9,16 +9,19 @@ const Footer = () => {
 
         <div>
           <SocialIcon
+            rel="noreferrer noopener"
             url="https://facebook.com/digbizcards/"
             target="_blank"
             style={{ width: 40, height: 40, marginRight: 20 }}
           />
           <SocialIcon
+            rel="noreferrer noopener"
             url="https://instagram.com/digbizcards/"
             target="_blank"
             style={{ width: 40, height: 40, marginRight: 20 }}
           />
           <SocialIcon
+            rel="noreferrer noopener"
             url="mailto:support@digbizcards.in"
             target="_blank"
             style={{ width: 40, height: 40 }}

@@ -6,7 +6,7 @@ const Post = props => {
   return (
     <AniLink cover hex="#c398ff" className="no-decor" to={props.slug}>
       <Card className="mb-4 post-card">
-        <Card.Img variant="top" src={props.image} />
+        <Card.Img variant="top" src={props.image} alt="Main Post" />
         <Card.Body>
           <Card.Text className="m-0 mb-1 text-muted">{props.date}</Card.Text>
           <Card.Title>

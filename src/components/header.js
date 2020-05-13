@@ -21,13 +21,18 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="no-decor" href="https://digbizcards.in/login">
+            <Nav.Link
+              className="no-decor"
+              href="https://digbizcards.in/login"
+              rel="noreferrer noopener"
+            >
               Login
             </Nav.Link>
             <Nav.Link
               target="_blank"
               href="https://digbizcards.in/register"
               className="no-decor"
+              rel="noreferrer noopener"
             >
               Register
             </Nav.Link>

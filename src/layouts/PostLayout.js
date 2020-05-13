@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
               <img
                 className="text-center img-fluid"
                 src={post.thumbnail.resize.src}
-                alt="Main"
+                alt="Single Post"
               />
             </div>
             <div className="col-12 d-block mx-auto">
