@@ -6,7 +6,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 const Header = () => {
   return (
     <div>
-      <Navbar className="myNav p-2 mb-5" bg="light" expand="lg">
+      <Navbar className="myNav p-2" bg="light" expand="lg">
         <Navbar.Brand>
           <AniLink paintDrip hex="#6a00ff" className="no-decor" to="/">
             <img
