@@ -8,7 +8,7 @@ const Header = () => {
     <div>
       <Navbar className="myNav p-2" bg="light" expand="lg">
         <Navbar.Brand>
-          <AniLink cover hex="#6a00ff" className="no-decor" to="/">
+          <AniLink cover hex="#c398ff" className="no-decor" to="/">
             <img
               target="_blank"
               src={logo}

@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 const Post = props => {
   return (
-    <AniLink cover hex="#6a00ff" className="no-decor" to={props.slug}>
+    <AniLink cover hex="#c398ff" className="no-decor" to={props.slug}>
       <Card className="mb-4 post-card">
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
