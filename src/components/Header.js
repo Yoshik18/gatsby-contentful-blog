@@ -1,5 +1,6 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
+import logo from "../images/logo2.png"
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <Navbar className="myNav p-4" bg="light" expand="lg">
         <Navbar.Brand href="/">
           <img
-            src=""
+            src={logo}
             className="img-fluid"
             style={{ width: 250 }}
             alt="DigBizCards.in"
@@ -16,25 +17,14 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link>
-              <a
-                rel="noopener noreferrer"
-                className="no-decor"
-                href="https://digbizcards.in/login/"
-                target="_blank"
-              >
-                Login
-              </a>
+            <Nav.Link className="no-decor" href="https://digbizcards.in/login/">
+              Login
             </Nav.Link>
-            <Nav.Link>
-              <a
-                rel="noopener noreferrer"
-                className="no-decor"
-                href="https://digbizcards.in/register/"
-                target="_blank"
-              >
-                Register
-              </a>
+            <Nav.Link
+              href="https://digbizcards.in/register/"
+              className="no-decor"
+            >
+              Register
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
