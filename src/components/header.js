@@ -1,7 +1,7 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 
-const header = () => {
+const Header = () => {
   return (
     <div>
       <Navbar className="myNav p-4" bg="light" expand="lg">
@@ -43,4 +43,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
