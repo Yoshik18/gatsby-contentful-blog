@@ -14,7 +14,7 @@ const BlogPost = ({ data }) => {
       <Header></Header>
       <div className="container">
         <div className="row justify-content-md-center">
-          <div className="col-xs-12">
+          <div className="col-md-12">
             <h1
               className="text-center p-2 font-weight-bold"
               dangerouslySetInnerHTML={{ __html: post.title }}
@@ -22,12 +22,12 @@ const BlogPost = ({ data }) => {
             <p className="text-center">{post.datePublished}</p>
             <div className="text-center">
               <img
-                className="text-center"
+                className="text-center img-fluid"
                 src={post.thumbnail.resize.src}
                 alt="Main"
               />
             </div>
-            <div className="col-8 d-block mx-auto">
+            <div className="col-12 d-block mx-auto">
               <div className="m-2">
                 {documentToReactComponents(post.body.json)}
               </div>

@@ -8,8 +8,9 @@ const Header = () => {
     <div>
       <Navbar className="myNav p-2" bg="light" expand="lg">
         <Navbar.Brand>
-          <AniLink paintDrip hex="#6a00ff" className="no-decor" to="/">
+          <AniLink cover hex="#6a00ff" className="no-decor" to="/">
             <img
+              target="_blank"
               src={logo}
               className="img-fluid"
               style={{ width: 250 }}
@@ -24,6 +25,7 @@ const Header = () => {
               Login
             </Nav.Link>
             <Nav.Link
+              target="_blank"
               href="https://digbizcards.in/register"
               className="no-decor"
             >
