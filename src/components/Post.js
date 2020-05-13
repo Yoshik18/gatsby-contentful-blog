@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Card } from "react-bootstrap"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 const Post = props => {
   return (
-    <Link to={props.slug} className="no-decor">
+    <AniLink paintDrip hex="#6a00ff" className="no-decor" to={props.slug}>
       <Card className="mb-4 post-card">
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
@@ -22,7 +23,7 @@ const Post = props => {
           ></Card.Text>
         </Card.Body>
       </Card>
-    </Link>
+    </AniLink>
   )
 }
 

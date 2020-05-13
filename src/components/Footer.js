@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt-5">
       <div className="d-flex justify-content-around">
         <div>&copy; DigBizCards.in 2020</div>
 
