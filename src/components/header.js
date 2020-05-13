@@ -10,8 +10,23 @@ const header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to="/">
-              First
+            <Nav.Link>
+              <a
+                className="no-decor"
+                href="https://digbizcards.in/login/"
+                target="_blank"
+              >
+                Login
+              </a>
+            </Nav.Link>
+            <Nav.Link>
+              <a
+                className="no-decor"
+                href="https://digbizcards.in/register/"
+                target="_blank"
+              >
+                Register
+              </a>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

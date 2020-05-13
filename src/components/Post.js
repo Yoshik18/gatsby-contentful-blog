@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 import { Card } from "react-bootstrap"
 const Post = props => {
   return (
-    <Link to={props.slug} className="no-decor">
+    <div onClick={() => navigate(props.slug)} className="no-decor">
       <Card className="mb-4 post-card">
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
@@ -22,7 +22,7 @@ const Post = props => {
           ></Card.Text>
         </Card.Body>
       </Card>
-    </Link>
+    </div>
   )
 }
 

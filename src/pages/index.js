@@ -12,7 +12,11 @@ const index = ({ data }) => {
             date={node.datePublished}
             slug={node.slug}
             title={node.title}
-            excerpt="New excerpt"
+            excerpt={
+              node.excerpt === null
+                ? ""
+                : node.excerpt.substring(0, 100) + "..."
+            }
             image={node.thumbnail.resize.src}
           />
         </div>
@@ -25,6 +29,7 @@ export const query = graphql`
   {
     allContentfulBlog(sort: { fields: datePublished, order: DESC }) {
       nodes {
+        excerpt
         thumbnail {
           resize(width: 800, height: 500) {
             src
