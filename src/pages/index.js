@@ -7,7 +7,7 @@ import Post from "../components/Post"
 const index = ({ data }) => {
   return (
     <PrimaryLayout>
-      <SEO title="Home" />
+      <SEO title="Home" git />
       {data.allContentfulBlog.nodes.map(node => (
         <div className="col-md-4">
           <Post

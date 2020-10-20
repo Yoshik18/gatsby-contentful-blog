@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
 
   return (
     <div>
-      <SEO title={post.title} />
+      <SEO title={post.title} description={post.excerpt} />
       <Header></Header>
       <div className="container">
         <div className="row justify-content-md-center">
@@ -44,6 +44,7 @@ export default BlogPost
 export const query = graphql`
   query($slug: String!) {
     contentfulBlog(slug: { eq: $slug }) {
+      excerpt
       title
       thumbnail {
         resize(quality: 50, width: 850, height: 500) {
