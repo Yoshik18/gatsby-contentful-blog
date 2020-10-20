@@ -22,6 +22,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link
+              target="_blank"
               className="no-decor"
               href="https://digbizcards.in/login"
               rel="noreferrer noopener"

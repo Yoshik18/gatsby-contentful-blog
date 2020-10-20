@@ -10,12 +10,12 @@ const Post = props => {
         <Card.Body>
           <Card.Text className="m-0 mb-1 text-muted">{props.date}</Card.Text>
           <Card.Title>
-            <h3>
+            <h4>
               <span
                 className="hover-underline"
                 dangerouslySetInnerHTML={{ __html: props.title }}
               ></span>
-            </h3>
+            </h4>
           </Card.Title>
           <Card.Text
             className="mb-5"

@@ -23,6 +23,9 @@ body {
   box-shadow: 5px 5px 5px rgb(197, 197, 197);
   min-height: 450px;
 }
+.card-body{
+ min-height: 300px; 
+}
 
 .card:hover .hover-underline {
   background-image: linear-gradient(to right, #c398ff, #c398ff);
