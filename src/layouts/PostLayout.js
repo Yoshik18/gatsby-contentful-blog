@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
               <img
                 className="text-center img-fluid"
                 src={post.thumbnail.resize.src}
-                alt="Single Post"
+                alt={post.title}
               />
             </div>
             <div className="col-12 d-block mx-auto">
@@ -46,6 +46,7 @@ export const query = graphql`
     contentfulBlog(slug: { eq: $slug }) {
       excerpt
       title
+      excerpt
       thumbnail {
         resize(quality: 50, width: 850, height: 500) {
           src
