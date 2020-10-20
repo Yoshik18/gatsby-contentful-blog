@@ -45,8 +45,6 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlog(slug: { eq: $slug }) {
       excerpt
-      title
-      excerpt
       thumbnail {
         resize(quality: 50, width: 850, height: 500) {
           src
