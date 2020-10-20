@@ -33,7 +33,7 @@ export const query = graphql`
       nodes {
         excerpt
         thumbnail {
-          resize(width: 800, height: 500) {
+          resize(width: 900, height: 500) {
             src
           }
         }

@@ -27,7 +27,8 @@ const BlogPost = ({ data }) => {
                 alt={post.title}
               />
             </div>
-            <div className="col-12 d-block mx-auto">
+            <br />
+            <div className="col-11 d-block mx-auto">
               <div className="m-2">
                 {documentToReactComponents(post.body.json)}
               </div>
@@ -46,7 +47,7 @@ export const query = graphql`
     contentfulBlog(slug: { eq: $slug }) {
       excerpt
       thumbnail {
-        resize(quality: 50, width: 850, height: 500) {
+        resize(quality: 50, width: 900, height: 500) {
           src
         }
       }
