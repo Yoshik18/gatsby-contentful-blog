@@ -3,10 +3,17 @@ import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { DiscussionEmbed } from "disqus-react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const BlogPost = ({ data }) => {
+
   const post = data.contentfulBlog
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: post.title },
+  }
 
   return (
     <div>
@@ -32,6 +39,7 @@ const BlogPost = ({ data }) => {
               <div className="m-2">
                 {documentToReactComponents(post.body.json)}
               </div>
+              <DiscussionEmbed {...disqusConfig} />
             </div>
           </div>
         </div>
