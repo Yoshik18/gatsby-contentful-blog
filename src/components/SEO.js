@@ -18,6 +18,7 @@ const SEO = ({ title, description }) => {
       <title>
         {title} | {data.site.siteMetadata.defaultTitle}
       </title>
+      <meta name="robots" content="noindex, nofollow" />
       <meta
         name="description"
         content={description || data.site.siteMetadata.defaultDescription}
