@@ -28,7 +28,7 @@ body {
 }
 
 .card:hover .hover-underline {
-  background-image: linear-gradient(to right, #c398ff, #c398ff);
+  background-image: linear-gradient(to right, #838df6, #838df6);
   background-repeat: no-repeat;
   background-position: 0 85%;
   background-size: 10rem 0.55rem;
@@ -63,7 +63,7 @@ body {
 }
 
 .underline {
-  background-image: linear-gradient(to right, #6a00ff, #6a00ff);
+  background-image: linear-gradient(to right, #1e2dcd, #1e2dcd);
   background-repeat: no-repeat;
   background-position: 0 85%;
   background-size: 10rem 0.55rem;

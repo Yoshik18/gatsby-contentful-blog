@@ -5,9 +5,9 @@ const Hero = () => {
     <div>
       <div className="hero mb-4 d-flex flex-column justify-content-center align-items-center text-white">
         <h1 className=" display-4 font-weight-bold underline text-center">
-          DigBizCards Blog
+          KayHosting Blog
         </h1>
-        <h4 className="underline">Learn. Rank. Dominate.</h4>
+        <h4 className="underline">Buy Cheap and Fast RDP/VPS</h4>
       </div>
     </div>
   )

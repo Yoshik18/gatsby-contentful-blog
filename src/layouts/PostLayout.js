@@ -4,10 +4,10 @@ import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from "disqus-react"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 const BlogPost = ({ data }) => {
-
   const post = data.contentfulBlog
 
   const disqusConfig = {
@@ -36,9 +36,7 @@ const BlogPost = ({ data }) => {
             </div>
             <br />
             <div className="col-11 d-block mx-auto">
-              <div className="m-2">
-                {documentToReactComponents(post.body.json)}
-              </div>
+              <div className="m-2">{renderRichText(post.body)}</div>
               <DiscussionEmbed {...disqusConfig} />
             </div>
           </div>
@@ -51,7 +49,7 @@ const BlogPost = ({ data }) => {
 export default BlogPost
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     contentfulBlog(slug: { eq: $slug }) {
       excerpt
       thumbnail {
@@ -62,7 +60,7 @@ export const query = graphql`
       title
       datePublished(formatString: "MMMM DD, YYYY")
       body {
-        json
+        raw
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
-import logo from "../images/logo2.png"
+import logo from "../images/logo-2.png"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = () => {
@@ -8,13 +8,13 @@ const Header = () => {
     <div>
       <Navbar className="myNav p-2" bg="light" expand="lg">
         <Navbar.Brand>
-          <AniLink cover hex="#c398ff" className="no-decor" to="/">
+          <AniLink cover hex="#5c65ca" className="no-decor" to="/">
             <img
               target="_blank"
               src={logo}
               className="img-fluid"
               style={{ width: 250 }}
-              alt="DigBizCards.in"
+              alt="KayHosting"
             />
           </AniLink>
         </Navbar.Brand>
@@ -24,14 +24,14 @@ const Header = () => {
             <Nav.Link
               target="_blank"
               className="no-decor"
-              href="https://digbizcards.in/login"
+              href="#"
               rel="noreferrer noopener"
             >
               Login
             </Nav.Link>
             <Nav.Link
               target="_blank"
-              href="https://digbizcards.in/register"
+              href="#"
               className="no-decor"
               rel="noreferrer noopener"
             >

@@ -3,8 +3,8 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `DigBizCards Blog`,
-    description: `Learn. Rank. Dominate`,
+    title: `KayHosting Blog`,
+    description: `Buy Cheap & Best RDP, VPS, Servers Online | Kayhosting`,
   },
   plugins: [
     {
@@ -25,6 +25,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
