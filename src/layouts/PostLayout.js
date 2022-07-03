@@ -37,7 +37,7 @@ const BlogPost = ({ data }) => {
             <br />
             <div className="col-11 d-block mx-auto">
               <div className="m-2">{renderRichText(post.body)}</div>
-              <DiscussionEmbed {...disqusConfig} />
+              {/* <DiscussionEmbed {...disqusConfig} /> */}
             </div>
           </div>
         </div>
